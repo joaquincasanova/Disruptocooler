@@ -9425,6 +9425,12 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <text x="15.24" y="-4.953" size="1.27" layer="51" ratio="10" rot="R90">C</text>
 <text x="-3.81" y="-6.223" size="1.27" layer="51" ratio="10" rot="R90">E</text>
 <text x="-3.81" y="4.572" size="1.27" layer="51" ratio="10" rot="R90">B</text>
+<wire x1="-36.83" y1="0" x2="36.83" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="36.83" x2="0" y2="-36.83" width="0.127" layer="21"/>
+<wire x1="0" y1="36.83" x2="-36.83" y2="0" width="0.127" layer="21"/>
+<wire x1="-36.83" y1="0" x2="0" y2="-36.83" width="0.127" layer="21"/>
+<wire x1="0" y1="-36.83" x2="36.83" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="36.83" x2="36.83" y2="0" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -9499,6 +9505,12 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <text x="-3.81" y="-6.223" size="1.27" layer="51" ratio="10" rot="R90">E</text>
 <text x="-3.81" y="4.572" size="1.27" layer="51" ratio="10" rot="R90">B</text>
 <text x="12.7" y="-3.683" size="1.27" layer="51" ratio="10" rot="R90">C</text>
+<wire x1="36.83" y1="0" x2="-36.83" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="36.83" x2="0" y2="-36.83" width="0.127" layer="21"/>
+<wire x1="0" y1="-36.83" x2="36.83" y2="0" width="0.127" layer="21"/>
+<wire x1="36.83" y1="0" x2="0" y2="36.83" width="0.127" layer="21"/>
+<wire x1="0" y1="36.83" x2="-36.83" y2="0" width="0.127" layer="21"/>
+<wire x1="-36.83" y1="0" x2="0" y2="-36.83" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -9950,11 +9962,11 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="J3" library="con-faston" deviceset="PIN2" device="F061.100"/>
 <part name="J4" library="con-faston" deviceset="PIN2" device="F061.100"/>
-<part name="R1" library="rcl" deviceset="R-US_" device="0207/10" value="1K"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="0207/15" value="1K"/>
 <part name="T1" library="transistor" deviceset="2N3055" device=""/>
 <part name="Q1" library="transistor-pnp" deviceset="2N4905" device="" value="2N5883"/>
-<part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="1.8K"/>
-<part name="R3" library="rcl" deviceset="R-US_" device="0207/10" value="10"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="0207/15" value="1.8K"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="0207/15" value="10"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="0922/22" value="1"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="VDD1" library="supply1" deviceset="VDD" device=""/>
@@ -9982,6 +9994,9 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <sheet>
 <plain>
 <text x="165.1" y="20.32" size="1.778" layer="98">Ultrasonic transducer driver</text>
+<text x="195.58" y="96.52" size="1.778" layer="97">Fans out</text>
+<text x="226.06" y="96.52" size="1.778" layer="97">TEC out</text>
+<text x="162.56" y="142.24" size="1.778" layer="97">Relay</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -10002,13 +10017,13 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <instance part="Q1" gate="A" x="86.36" y="142.24" rot="R90"/>
 <instance part="R2" gate="G$1" x="104.14" y="106.68" rot="R90"/>
 <instance part="R3" gate="G$1" x="78.74" y="127"/>
-<instance part="R4" gate="G$1" x="116.84" y="144.78"/>
+<instance part="R4" gate="G$1" x="114.3" y="144.78"/>
 <instance part="GND1" gate="1" x="104.14" y="93.98"/>
 <instance part="VDD1" gate="G$1" x="147.32" y="157.48"/>
 <instance part="J1" gate="-1" x="152.4" y="149.86"/>
-<instance part="J2" gate="-1" x="177.8" y="149.86" rot="R180"/>
+<instance part="J2" gate="-1" x="218.44" y="111.76" rot="R180"/>
 <instance part="J5" gate="-1" x="152.4" y="137.16"/>
-<instance part="J6" gate="-1" x="177.8" y="137.16" rot="R180"/>
+<instance part="J6" gate="-1" x="218.44" y="132.08" rot="R180"/>
 <instance part="X2" gate="-1" x="236.22" y="106.68" rot="R180"/>
 <instance part="X2" gate="-2" x="236.22" y="111.76" rot="R180"/>
 <instance part="X2" gate="-3" x="236.22" y="116.84" rot="R180"/>
@@ -10115,7 +10130,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <pinref part="T1" gate="A" pin="B"/>
 <wire x1="91.44" y1="144.78" x2="104.14" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="144.78" x2="111.76" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="144.78" x2="109.22" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="T2" gate="A" pin="B"/>
 <wire x1="104.14" y1="160.02" x2="104.14" y2="144.78" width="0.1524" layer="91"/>
 </segment>
@@ -10149,7 +10164,8 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <wire x1="109.22" y1="149.86" x2="127" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="IC5" gate="A1" pin="VO"/>
-<wire x1="127" y1="149.86" x2="127" y2="127" width="0.1524" layer="91"/>
+<wire x1="127" y1="149.86" x2="127" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="127" y1="144.78" x2="127" y2="127" width="0.1524" layer="91"/>
 <wire x1="127" y1="127" x2="127" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="127" x2="127" y2="127" width="0.1524" layer="91"/>
 <wire x1="127" y1="149.86" x2="147.32" y2="149.86" width="0.1524" layer="91"/>
@@ -10160,6 +10176,8 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <wire x1="147.32" y1="149.86" x2="147.32" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="T2" gate="A" pin="E"/>
 <wire x1="109.22" y1="165.1" x2="109.22" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="144.78" x2="127" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X3" gate="-1" pin="KL"/>
@@ -10178,35 +10196,27 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <pinref part="VDD5" gate="G$1" pin="VDD"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="TEC2" class="0">
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="127" y1="144.78" x2="121.92" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-7" pin="KL"/>
+<wire x1="231.14" y1="137.16" x2="223.52" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="127" x2="223.52" y2="127" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="137.16" x2="223.52" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="J6" gate="-1" pin="1"/>
+<wire x1="223.52" y1="132.08" x2="223.52" y2="127" width="0.1524" layer="91"/>
+<junction x="223.52" y="132.08"/>
+<pinref part="X2" gate="-5" pin="KL"/>
 </segment>
 </net>
 <net name="TEC1" class="0">
 <segment>
+<pinref part="X2" gate="-3" pin="KL"/>
 <pinref part="J2" gate="-1" pin="1"/>
-<wire x1="182.88" y1="149.86" x2="190.5" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="223.52" y1="116.84" x2="231.14" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-<segment>
+<wire x1="231.14" y1="116.84" x2="223.52" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="116.84" x2="223.52" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="111.76" x2="223.52" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-1" pin="KL"/>
 <wire x1="223.52" y1="106.68" x2="231.14" y2="106.68" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="TEC2" class="0">
-<segment>
-<pinref part="J6" gate="-1" pin="1"/>
-<wire x1="182.88" y1="137.16" x2="190.5" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X2" gate="-7" pin="KL"/>
-<wire x1="231.14" y1="137.16" x2="223.52" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="231.14" y1="127" x2="223.52" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
