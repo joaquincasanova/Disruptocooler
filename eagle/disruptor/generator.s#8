@@ -17657,7 +17657,6 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <part name="D1" library="diode" deviceset="DIODE-" device="D-5" value="UF4004"/>
 <part name="C8" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value="2u2"/>
 <part name="C7" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value="2u2"/>
-<part name="C6" library="rcl" deviceset="C-EU" device="150-064X183" value="100n"/>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
 <part name="IC1" library="st-microelectronics" deviceset="NE555" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -17699,6 +17698,7 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="075-052X106" value="10n"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="C6" library="rcl" deviceset="C-EU" device="075-052X106" value="10n"/>
 </parts>
 <sheets>
 <sheet>
@@ -17721,10 +17721,6 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <instance part="C7" gate="G$1" x="208.28" y="96.52" smashed="yes">
 <attribute name="NAME" x="209.1648" y="97.0456" size="1.27" layer="95"/>
 <attribute name="VALUE" x="208.7777" y="92.138" size="1.27" layer="96"/>
-</instance>
-<instance part="C6" gate="G$1" x="172.72" y="91.44" smashed="yes">
-<attribute name="NAME" x="169.4112" y="91.5106" size="1.27" layer="95"/>
-<attribute name="VALUE" x="167.9861" y="87.4238" size="1.27" layer="96"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="IC1" gate="G$1" x="109.22" y="78.74"/>
@@ -17759,7 +17755,7 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <attribute name="NAME" x="149.6506" y="153.7168" size="1.27" layer="95"/>
 <attribute name="VALUE" x="149.8571" y="151.79" size="1.27" layer="96"/>
 </instance>
-<instance part="GND8" gate="1" x="106.68" y="144.78"/>
+<instance part="GND8" gate="1" x="106.68" y="142.24"/>
 <instance part="R4" gate="G$1" x="220.98" y="88.9" rot="R180"/>
 <instance part="R5" gate="G$1" x="220.98" y="63.5" rot="R180"/>
 <instance part="J1" gate="-1" x="238.76" y="76.2"/>
@@ -17782,6 +17778,10 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <attribute name="VALUE" x="136.8139" y="72.5962" size="1.27" layer="96" rot="R180"/>
 </instance>
 <instance part="GND9" gate="1" x="132.08" y="58.42"/>
+<instance part="C6" gate="G$1" x="172.72" y="88.9" smashed="yes" rot="R180">
+<attribute name="NAME" x="176.0288" y="88.8294" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="177.4539" y="92.9162" size="1.27" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 <bus name="B$1">
@@ -17876,8 +17876,8 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <wire x1="172.72" y1="96.52" x2="177.8" y2="96.52" width="0.1524" layer="91"/>
 <junction x="177.8" y="96.52"/>
 <pinref part="IC3" gate="G$1" pin="9"/>
-<pinref part="C6" gate="G$1" pin="1"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
+<pinref part="C6" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="+"/>
@@ -17951,8 +17951,8 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <wire x1="172.72" y1="76.2" x2="177.8" y2="76.2" width="0.1524" layer="91"/>
 <junction x="177.8" y="76.2"/>
 <pinref part="IC3" gate="G$1" pin="13"/>
-<pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="C6" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="S1" gate="1" pin="O"/>
@@ -17974,18 +17974,19 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <wire x1="109.22" y1="93.98" x2="109.22" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C5" gate="G$1" pin="-"/>
-<pinref part="IC4" gate="A1" pin="GND"/>
-<wire x1="147.32" y1="149.86" x2="127" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="-"/>
-<wire x1="127" y1="149.86" x2="106.68" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="149.86" x2="30.48" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="144.78" x2="17.78" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="144.78" x2="17.78" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="106.68" y1="144.78" x2="106.68" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="-"/>
 <wire x1="17.78" y1="154.94" x2="20.32" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="106.68" y1="147.32" x2="106.68" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="144.78" x2="17.78" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="144.78" x2="106.68" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="A1" pin="GND"/>
+<wire x1="106.68" y1="144.78" x2="127" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="127" y1="144.78" x2="127" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="-"/>
+<wire x1="147.32" y1="149.86" x2="147.32" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="127" y1="144.78" x2="147.32" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="25.4" y1="152.4" x2="27.94" y2="152.4" width="0.1524" layer="91"/>

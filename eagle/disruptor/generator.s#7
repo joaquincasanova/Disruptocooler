@@ -17704,6 +17704,8 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <sheet>
 <plain>
 <text x="165.1" y="20.32" size="1.778" layer="98">Ultrasonic transducer driver</text>
+<text x="10.16" y="139.7" size="1.778" layer="91">12 VAC in</text>
+<text x="12.7" y="101.6" size="1.778" layer="91">Rectified variac out</text>
 </plain>
 <instances>
 <instance part="IC3" gate="G$1" x="187.96" y="81.28" smashed="yes">

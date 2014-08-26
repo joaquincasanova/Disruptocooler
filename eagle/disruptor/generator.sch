@@ -17667,8 +17667,8 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <part name="IC2" library="74xx-us" deviceset="74*04" device="N" technology="ALS"/>
 <part name="IC4" library="linear" deviceset="78*" device="TV" technology="05"/>
 <part name="B1" library="rectifier" deviceset="RECTIFIER-" device="GBU4"/>
-<part name="R2" library="pot" deviceset="TRIM_EU-" device="LI15"/>
-<part name="R3" library="pot" deviceset="TRIM_EU-" device="LI15"/>
+<part name="R2" library="pot" deviceset="TRIM_EU-" device="LI10"/>
+<part name="R3" library="pot" deviceset="TRIM_EU-" device="LI10"/>
 <part name="C1" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value=".1u"/>
 <part name="C2" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value=".1u"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
