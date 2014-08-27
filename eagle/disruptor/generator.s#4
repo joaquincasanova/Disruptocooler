@@ -17762,7 +17762,7 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <instance part="R4" gate="G$1" x="220.98" y="88.9" rot="R180"/>
 <instance part="R5" gate="G$1" x="220.98" y="63.5" rot="R180"/>
 <instance part="J1" gate="-1" x="238.76" y="76.2"/>
-<instance part="J2" gate="-1" x="238.76" y="71.12"/>
+<instance part="J2" gate="-1" x="243.84" y="71.12"/>
 <instance part="J3" gate="-1" x="10.16" y="160.02" rot="R180"/>
 <instance part="J4" gate="-1" x="12.7" y="149.86" rot="R180"/>
 <instance part="J5" gate="-1" x="12.7" y="109.22" rot="R180"/>
@@ -17787,11 +17787,6 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 </instance>
 </instances>
 <busses>
-<bus name="B$3">
-<segment>
-<wire x1="152.4" y1="78.74" x2="182.88" y2="78.74" width="0.1524" layer="92"/>
-</segment>
-</bus>
 </busses>
 <nets>
 <net name="N$1" class="0">
@@ -17808,7 +17803,7 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <pinref part="C7" gate="G$1" pin="+"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="LO" class="0">
 <segment>
 <wire x1="195.58" y1="73.66" x2="198.12" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="73.66" x2="198.12" y2="63.5" width="0.1524" layer="91"/>
@@ -17817,7 +17812,7 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="TRANS1" class="0">
 <segment>
 <wire x1="195.58" y1="83.82" x2="208.28" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="83.82" x2="208.28" y2="91.44" width="0.1524" layer="91"/>
@@ -17835,7 +17830,7 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <junction x="233.68" y="76.2"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="HO" class="0">
 <segment>
 <wire x1="195.58" y1="88.9" x2="215.9" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="7"/>
@@ -17987,7 +17982,7 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <wire x1="132.08" y1="60.96" x2="132.08" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="HIN" class="0">
 <segment>
 <pinref part="IC2" gate="A" pin="I"/>
 <pinref part="IC1" gate="G$1" pin="OUT"/>
@@ -18052,10 +18047,11 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <pinref part="J5" gate="-1" pin="1"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="TRANS2" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="D"/>
 <pinref part="J2" gate="-1" pin="1"/>
+<wire x1="238.76" y1="71.12" x2="233.68" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -18077,6 +18073,13 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <pinref part="B1" gate="G$1" pin="AC1"/>
 <pinref part="J3" gate="-1" pin="1"/>
 <wire x1="25.4" y1="160.02" x2="15.24" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LIN" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="12"/>
+<pinref part="IC2" gate="A" pin="O"/>
+<wire x1="180.34" y1="78.74" x2="152.4" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
