@@ -410,191 +410,6 @@ Source: http://catalog.tycoelectronics.com .. ENG_DS_1654001_1099_SR_0406.pdf</d
 </deviceset>
 </devicesets>
 </library>
-<library name="trafo">
-<description>&lt;b&gt;Transformers&lt;/b&gt;&lt;p&gt;
-Based on the following previous libraries:
-&lt;ul&gt;
-&lt;li&gt;trafo-b.lbr: transformers from BLOCK
-&lt;li&gt;trafo-e.lbr: transformers from ERA
-&lt;li&gt;trafo-r.lbr: ring cores
-&lt;/ul&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="EI30-1">
-<description>&lt;b&gt;TRANSFORMER&lt;/b&gt;&lt;p&gt;
-1 primary winding, 1 secondary winding</description>
-<wire x1="-3.175" y1="3.81" x2="-3.175" y2="-3.81" width="0.254" layer="21"/>
-<wire x1="-1.27" y1="3.81" x2="-1.27" y2="-3.81" width="0.254" layer="21"/>
-<wire x1="-1.27" y1="-3.81" x2="-3.175" y2="-3.81" width="0.254" layer="21"/>
-<wire x1="0" y1="3.81" x2="0" y2="-3.81" width="0.254" layer="21"/>
-<wire x1="1.27" y1="2.54" x2="1.27" y2="-2.54" width="0.254" layer="21"/>
-<wire x1="1.27" y1="-2.54" x2="3.175" y2="-2.54" width="0.254" layer="21"/>
-<wire x1="1.27" y1="2.54" x2="3.175" y2="2.54" width="0.254" layer="21"/>
-<wire x1="3.175" y1="-2.54" x2="3.175" y2="2.54" width="0.254" layer="21"/>
-<wire x1="-3.175" y1="3.81" x2="-1.27" y2="3.81" width="0.254" layer="21"/>
-<wire x1="-5.08" y1="3.81" x2="-3.175" y2="3.81" width="0.254" layer="21"/>
-<wire x1="-3.175" y1="-3.81" x2="-5.08" y2="-3.81" width="0.254" layer="21"/>
-<wire x1="3.175" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="21"/>
-<wire x1="3.175" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="21"/>
-<wire x1="-13.716" y1="-14.986" x2="-12.446" y2="-16.256" width="0.254" layer="21" curve="90"/>
-<wire x1="12.446" y1="16.256" x2="13.716" y2="14.986" width="0.254" layer="21" curve="-90"/>
-<wire x1="12.446" y1="-16.256" x2="13.716" y2="-14.986" width="0.254" layer="21" curve="90"/>
-<wire x1="13.716" y1="14.986" x2="13.716" y2="-14.986" width="0.254" layer="21"/>
-<wire x1="-13.716" y1="14.986" x2="-12.446" y2="16.256" width="0.254" layer="21" curve="-90"/>
-<wire x1="-13.716" y1="-14.986" x2="-13.716" y2="14.986" width="0.254" layer="21"/>
-<wire x1="8.763" y1="12.192" x2="9.398" y2="11.557" width="0.254" layer="51" curve="-90"/>
-<wire x1="8.763" y1="-12.192" x2="9.398" y2="-11.557" width="0.254" layer="51" curve="90"/>
-<wire x1="-9.398" y1="11.557" x2="-8.763" y2="12.192" width="0.254" layer="51" curve="-90"/>
-<wire x1="-9.398" y1="-11.557" x2="-8.763" y2="-12.192" width="0.254" layer="51" curve="90"/>
-<wire x1="12.446" y1="-16.256" x2="-12.446" y2="-16.256" width="0.254" layer="21"/>
-<wire x1="-12.446" y1="16.256" x2="12.446" y2="16.256" width="0.254" layer="21"/>
-<wire x1="-9.398" y1="-11.557" x2="-9.398" y2="-7.874" width="0.254" layer="51"/>
-<wire x1="-8.763" y1="-12.192" x2="8.763" y2="-12.192" width="0.254" layer="21"/>
-<wire x1="8.763" y1="12.192" x2="-8.763" y2="12.192" width="0.254" layer="21"/>
-<wire x1="9.398" y1="-8.001" x2="9.398" y2="-11.557" width="0.254" layer="51"/>
-<wire x1="-9.398" y1="-7.874" x2="-9.398" y2="7.874" width="0.254" layer="21"/>
-<wire x1="9.398" y1="-8.001" x2="9.398" y2="-7.112" width="0.254" layer="21"/>
-<wire x1="9.398" y1="-2.921" x2="9.398" y2="-7.112" width="0.254" layer="51"/>
-<wire x1="9.398" y1="-2.921" x2="9.398" y2="2.921" width="0.254" layer="21"/>
-<wire x1="9.398" y1="7.112" x2="9.398" y2="2.921" width="0.254" layer="51"/>
-<wire x1="9.398" y1="7.112" x2="9.398" y2="7.874" width="0.254" layer="21"/>
-<wire x1="9.398" y1="11.557" x2="9.398" y2="7.874" width="0.254" layer="51"/>
-<wire x1="-9.398" y1="7.874" x2="-9.398" y2="11.557" width="0.254" layer="51"/>
-<circle x="-3.937" y="-3.048" radius="0.254" width="0.254" layer="21"/>
-<circle x="3.937" y="-1.778" radius="0.254" width="0.254" layer="21"/>
-<circle x="-5.715" y="3.81" radius="0.635" width="0.254" layer="21"/>
-<circle x="-5.715" y="-3.81" radius="0.635" width="0.254" layer="21"/>
-<circle x="5.715" y="-2.54" radius="0.635" width="0.254" layer="21"/>
-<circle x="5.715" y="2.54" radius="0.635" width="0.254" layer="21"/>
-<pad name="1" x="-10.0076" y="10.0076" drill="1.1176" diameter="3.81" shape="octagon"/>
-<pad name="5" x="-10.0076" y="-10.0076" drill="1.1176" diameter="3.81" shape="octagon"/>
-<pad name="6" x="10.0076" y="-10.0076" drill="1.1176" diameter="3.81" shape="octagon"/>
-<pad name="7" x="10.0076" y="-5.0038" drill="1.1176" diameter="3.81" shape="octagon"/>
-<pad name="9" x="10.0076" y="5.0038" drill="1.1176" diameter="3.81" shape="octagon"/>
-<pad name="10" x="10.0076" y="10.0076" drill="1.1176" diameter="3.81" shape="octagon"/>
-<text x="-12.7" y="16.891" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="16.891" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-6.731" y="-0.889" size="1.778" layer="21" ratio="10">P1</text>
-<text x="6.477" y="-1.27" size="1.778" layer="21" ratio="10" rot="R90">S1</text>
-<text x="-6.35" y="-10.16" size="1.778" layer="21" ratio="10">EI30-1</text>
-<text x="-12.065" y="12.7" size="1.27" layer="21" ratio="10">1</text>
-<text x="-12.065" y="-13.97" size="1.27" layer="21" ratio="10">5</text>
-<text x="10.16" y="12.7" size="1.27" layer="21" ratio="10">10</text>
-<text x="10.795" y="-13.97" size="1.27" layer="21" ratio="10">6</text>
-<rectangle x1="-3.175" y1="-3.81" x2="-1.27" y2="3.81" layer="21"/>
-<rectangle x1="1.27" y1="-2.54" x2="3.175" y2="2.54" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="T1P1S">
-<wire x1="1.27" y1="5.207" x2="1.27" y2="-7.747" width="0.254" layer="94"/>
-<circle x="-2.921" y="-8.636" radius="0.127" width="0.3048" layer="94"/>
-<circle x="5.461" y="-5.842" radius="0.127" width="0.3048" layer="94"/>
-<text x="-2.54" y="7.366" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-10.795" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-3.175" y="-2.54" size="1.27" layer="94" rot="R90">PRI</text>
-<text x="6.985" y="-2.54" size="1.27" layer="94" rot="R90">SEC</text>
-<rectangle x1="-2.286" y1="-7.62" x2="0.254" y2="5.08" layer="94"/>
-<rectangle x1="2.286" y1="-5.08" x2="4.826" y2="2.54" layer="94"/>
-<pin name="P1" x="-5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="P2" x="-5.08" y="-7.62" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="S3" x="7.62" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="2" rot="R180"/>
-<pin name="S4" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="2" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="EI30-1" prefix="TR" uservalue="yes">
-<description>&lt;b&gt;TRANSFORMER&lt;/b&gt;&lt;p&gt;
-1 primary winding, 1 secondary winding&lt;p&gt;
-ERA</description>
-<gates>
-<gate name="1" symbol="T1P1S" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="EI30-1">
-<connects>
-<connect gate="1" pin="P1" pad="1"/>
-<connect gate="1" pin="P2" pad="5"/>
-<connect gate="1" pin="S3" pad="7"/>
-<connect gate="1" pin="S4" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="rectifier">
-<description>&lt;b&gt;Rectifiers&lt;/b&gt;&lt;p&gt;
-General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="KBL">
-<description>&lt;b&gt;DIOTEC RECTIFIER&lt;/b&gt;</description>
-<wire x1="-9.779" y1="-3.175" x2="-9.779" y2="3.429" width="0.1524" layer="21"/>
-<wire x1="-9.779" y1="-3.175" x2="9.779" y2="-3.175" width="0.1524" layer="21"/>
-<wire x1="9.779" y1="3.429" x2="9.779" y2="-3.175" width="0.1524" layer="21"/>
-<wire x1="9.779" y1="3.429" x2="-9.779" y2="3.429" width="0.1524" layer="21"/>
-<wire x1="-8.128" y1="1.778" x2="-7.112" y2="1.778" width="0.1524" layer="21"/>
-<wire x1="-2.5146" y1="1.905" x2="-1.8542" y2="1.905" width="0.1524" layer="21" curve="180"/>
-<wire x1="-3.175" y1="1.905" x2="-2.5146" y2="1.905" width="0.1524" layer="21" curve="-180"/>
-<wire x1="-7.62" y1="1.27" x2="-7.62" y2="2.286" width="0.1524" layer="21"/>
-<wire x1="7.112" y1="1.778" x2="8.128" y2="1.778" width="0.1524" layer="21"/>
-<wire x1="2.5654" y1="1.905" x2="3.2258" y2="1.905" width="0.1524" layer="21" curve="180"/>
-<wire x1="1.905" y1="1.905" x2="2.5654" y2="1.905" width="0.1524" layer="21" curve="-180"/>
-<pad name="+" x="-7.62" y="-1.27" drill="1.6002" shape="long" rot="R90"/>
-<pad name="AC2" x="-2.54" y="-1.27" drill="1.6002" shape="long" rot="R90"/>
-<pad name="AC1" x="2.54" y="-1.27" drill="1.6002" shape="long" rot="R90"/>
-<pad name="-" x="7.62" y="-1.27" drill="1.6002" shape="long" rot="R90"/>
-<text x="-9.525" y="3.81" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="0" y="3.81" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-9.906" y1="-3.302" x2="9.906" y2="3.556" layer="43"/>
-</package>
-</packages>
-<symbols>
-<symbol name="GB">
-<wire x1="0" y1="-2.54" x2="2.54" y2="0" width="0.3048" layer="94"/>
-<wire x1="0" y1="2.54" x2="-2.54" y2="0" width="0.3048" layer="94"/>
-<wire x1="-2.54" y1="0" x2="0" y2="-2.54" width="0.3048" layer="94"/>
-<wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.3048" layer="94"/>
-<wire x1="-1.27" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.635" y1="0.635" x2="-0.635" y2="-0.635" width="0.1524" layer="94"/>
-<wire x1="-0.635" y1="0.635" x2="0.635" y2="0" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="0" x2="-0.635" y2="-0.635" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="0.635" x2="0.635" y2="-0.635" width="0.1524" layer="94"/>
-<text x="2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="AC1" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="AC2" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="-" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
-<pin name="+" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="KBL" prefix="B" uservalue="yes">
-<description>&lt;b&gt;DIOTEC RECTIFIER&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="GB" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="KBL">
-<connects>
-<connect gate="1" pin="+" pad="+"/>
-<connect gate="1" pin="-" pad="-"/>
-<connect gate="1" pin="AC1" pad="AC2"/>
-<connect gate="1" pin="AC2" pad="AC1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="diode">
 <description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
 Based on the following sources:
@@ -680,8 +495,6 @@ general purpose rectifier, 1 A</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="X1" library="con-tycoelectronics" deviceset="6ESRM-P" device=""/>
-<part name="TR1" library="trafo" deviceset="EI30-1" device=""/>
-<part name="B1" library="rectifier" deviceset="KBL" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="D2" library="diode" deviceset="1N4004" device=""/>
 <part name="D3" library="diode" deviceset="1N4004" device=""/>
@@ -700,8 +513,6 @@ general purpose rectifier, 1 A</description>
 <instance part="GND1" gate="1" x="50.8" y="68.58" rot="R180"/>
 <instance part="P+1" gate="VCC" x="99.06" y="83.82" rot="R90"/>
 <instance part="X1" gate="G$1" x="50.8" y="63.5" rot="R270"/>
-<instance part="TR1" gate="1" x="-5.08" y="78.74"/>
-<instance part="B1" gate="1" x="45.72" y="38.1"/>
 <instance part="P+2" gate="VCC" x="99.06" y="55.88" rot="R90"/>
 <instance part="D2" gate="1" x="109.22" y="68.58" rot="R270"/>
 <instance part="D3" gate="1" x="109.22" y="43.18" rot="R270"/>
