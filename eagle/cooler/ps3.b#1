@@ -931,7 +931,7 @@ design rules under a new name.</description>
 <wire x1="37.356503125" y1="17.25349375" x2="69.32349375" y2="17.25349375" width="0" layer="19" extent="1-1"/>
 <wire x1="-15.98349375" y1="38.626503125" x2="15.98349375" y2="38.626503125" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="B">
+<signal name="N$1">
 <contactref element="Q1" pad="C"/>
 <contactref element="Q1" pad="C/"/>
 <contactref element="T1" pad="B"/>
@@ -956,7 +956,7 @@ design rules under a new name.</description>
 <wire x1="144.036503125" y1="17.25349375" x2="133.35" y2="7.62" width="0" layer="19" extent="16-16"/>
 <wire x1="24.13" y1="67.31" x2="17.676978125" y2="29.21" width="0" layer="19" extent="16-16"/>
 </signal>
-<signal name="VI">
+<signal name="N$4">
 <contactref element="Q1" pad="B"/>
 <contactref element="R3" pad="2"/>
 <contactref element="IC5" pad="1"/>
