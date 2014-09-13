@@ -9988,7 +9988,6 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="T2" library="transistor" deviceset="2N3055" device=""/>
 <part name="T3" library="transistor" deviceset="2N3055" device=""/>
 </parts>
 <sheets>
@@ -10053,7 +10052,6 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <instance part="GND7" gate="1" x="228.6" y="121.92" rot="R270"/>
 <instance part="GND9" gate="1" x="228.6" y="132.08" rot="R270"/>
 <instance part="GND10" gate="1" x="228.6" y="142.24" rot="R270"/>
-<instance part="T2" gate="A" x="104.14" y="167.64" rot="R90"/>
 <instance part="T3" gate="A" x="106.68" y="157.48" rot="R90"/>
 </instances>
 <busses>
@@ -10122,11 +10120,8 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <wire x1="66.04" y1="127" x2="73.66" y2="127" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="149.86" x2="66.04" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="J3" gate="-1" pin="1"/>
-<pinref part="T2" gate="A" pin="C"/>
 <wire x1="96.52" y1="149.86" x2="101.6" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="T3" gate="A" pin="C"/>
-<junction x="101.6" y="160.02"/>
-<wire x1="101.6" y1="160.02" x2="99.06" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="B" class="0">
@@ -10136,11 +10131,8 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <wire x1="91.44" y1="144.78" x2="101.6" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="144.78" x2="109.22" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="T2" gate="A" pin="B"/>
 <wire x1="106.68" y1="154.94" x2="101.6" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="T3" gate="A" pin="B"/>
-<junction x="106.68" y="154.94"/>
-<wire x1="106.68" y1="154.94" x2="104.14" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VI" class="0">
@@ -10182,13 +10174,10 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <wire x1="147.32" y1="149.86" x2="142.24" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="J5" gate="-1" pin="1"/>
 <wire x1="147.32" y1="149.86" x2="147.32" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="T2" gate="A" pin="E"/>
 <wire x1="111.76" y1="160.02" x2="106.68" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="119.38" y1="144.78" x2="127" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="T3" gate="A" pin="E"/>
-<junction x="111.76" y="160.02"/>
-<wire x1="111.76" y1="160.02" x2="109.22" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X3" gate="-1" pin="KL"/>
