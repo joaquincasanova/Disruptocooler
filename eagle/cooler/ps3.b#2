@@ -77,6 +77,8 @@
 <wire x1="184.15" y1="0" x2="184.15" y2="101.6" width="0" layer="20"/>
 <wire x1="184.15" y1="101.6" x2="0" y2="101.6" width="0" layer="20"/>
 <wire x1="0" y1="101.6" x2="0" y2="0" width="0" layer="20"/>
+<hole x="52.07" y="68.58" drill="3.2"/>
+<hole x="144.78" y="68.58" drill="3.2"/>
 </plain>
 <libraries>
 <library name="linear">
