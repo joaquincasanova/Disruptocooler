@@ -24107,7 +24107,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="100"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="100"/>
 <part name="J1" library="con-faston" deviceset="PIN2" device="F061.100"/>
-<part name="J2" library="con-faston" deviceset="PIN2" device="F061.100"/>
 <part name="J3" library="con-faston" deviceset="PIN2" device="F061.100"/>
 <part name="J4" library="con-faston" deviceset="PIN2" device="F061.100"/>
 <part name="J5" library="con-faston" deviceset="PIN2" device="F061.100"/>
@@ -24117,8 +24116,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="VDD2" library="supply1" deviceset="VDD" device=""/>
-<part name="R6" library="rcl" deviceset="R-US_" device="0207/10" value="22k"/>
-<part name="R7" library="rcl" deviceset="R-US_" device="0207/10" value="22k"/>
+<part name="R6" library="rcl" deviceset="R-US_" device="0207/10" value="1M"/>
+<part name="R7" library="rcl" deviceset="R-US_" device="0207/10" value="1M"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="075-052X106" value="10n"/>
@@ -24131,6 +24130,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="C12" library="resistor" deviceset="CPOL-US" device="E10-35"/>
 <part name="B2" library="rectifier" deviceset="RECTIFIER-" device="GBU4"/>
 <part name="C13" library="resistor" deviceset="CPOL-US" device="E7.5-18"/>
+<part name="J7" library="con-faston" deviceset="PIN2" device="F061.100"/>
 </parts>
 <sheets>
 <sheet>
@@ -24194,7 +24194,6 @@ diameter 5 mm, grid 2.54 mm</description>
 <instance part="R4" gate="G$1" x="220.98" y="88.9" rot="R180"/>
 <instance part="R5" gate="G$1" x="220.98" y="63.5" rot="R180"/>
 <instance part="J1" gate="-1" x="238.76" y="76.2"/>
-<instance part="J2" gate="-1" x="238.76" y="50.8"/>
 <instance part="J3" gate="-1" x="10.16" y="160.02" rot="R180"/>
 <instance part="J4" gate="-1" x="12.7" y="149.86" rot="R180"/>
 <instance part="J5" gate="-1" x="12.7" y="109.22" rot="R180"/>
@@ -24224,6 +24223,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <instance part="C12" gate="G$1" x="63.5" y="81.28"/>
 <instance part="B2" gate="G$1" x="25.4" y="78.74"/>
 <instance part="C13" gate="G$1" x="53.34" y="152.4"/>
+<instance part="J7" gate="-1" x="236.22" y="35.56"/>
 </instances>
 <busses>
 </busses>
@@ -24370,7 +24370,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <wire x1="20.32" y1="78.74" x2="20.32" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="45.72" x2="45.72" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="45.72" x2="45.72" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="J2" gate="-1" pin="1"/>
+<wire x1="233.68" y1="50.8" x2="254" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="254" y1="50.8" x2="254" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="76.2" x2="177.8" y2="76.2" width="0.1524" layer="91"/>
@@ -24489,7 +24490,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <wire x1="226.06" y1="86.36" x2="226.06" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TRANS" class="0">
+<net name="TRANS1" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="D"/>
 <wire x1="195.58" y1="83.82" x2="208.28" y2="83.82" width="0.1524" layer="91"/>
@@ -24567,6 +24568,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <wire x1="30.48" y1="78.74" x2="35.56" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="78.74" x2="35.56" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="109.22" x2="45.72" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="109.22" x2="254" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="254" y1="109.22" x2="254" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
