@@ -24489,7 +24489,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <wire x1="226.06" y1="86.36" x2="226.06" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TRANS2" class="0">
+<net name="TRANS" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="D"/>
 <wire x1="195.58" y1="83.82" x2="208.28" y2="83.82" width="0.1524" layer="91"/>
