@@ -24117,8 +24117,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="VDD2" library="supply1" deviceset="VDD" device=""/>
-<part name="R6" library="rcl" deviceset="R-US_" device="0207/10" value="1M"/>
-<part name="R7" library="rcl" deviceset="R-US_" device="0207/10" value="1M"/>
+<part name="R6" library="rcl" deviceset="R-US_" device="0207/10" value="22k"/>
+<part name="R7" library="rcl" deviceset="R-US_" device="0207/10" value="22k"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="075-052X106" value="10n"/>
@@ -24489,7 +24489,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <wire x1="226.06" y1="86.36" x2="226.06" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TRANS2" class="0">
+<net name="TRANS" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="D"/>
 <wire x1="195.58" y1="83.82" x2="208.28" y2="83.82" width="0.1524" layer="91"/>
