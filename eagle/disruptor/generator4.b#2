@@ -1844,7 +1844,7 @@ design rules under a new name.</description>
 <element name="B2" library="rectifier" package="GBU4" value="RECTIFIER-GBU4" x="-22.86" y="78.994" rot="R270"/>
 <element name="C13" library="resistor" package="E7,5-18" value="" x="-2.286" y="106.934" rot="R90"/>
 <element name="C14" library="rcl" package="E5-8,5" value="50u" x="55.88" y="5.842"/>
-<element name="C15" library="rcl" package="E5-8,5" value="50u" x="55.88" y="25.146" rot="R180"/>
+<element name="C15" library="rcl" package="E5-8,5" value="50u" x="55.88" y="16.002" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1900,7 +1900,6 @@ design rules under a new name.</description>
 <contactref element="C15" pad="-"/>
 <contactref element="Q2" pad="S"/>
 <wire x1="60.198" y1="63.5" x2="60.198" y2="71.12" width="0" layer="19" extent="1-1"/>
-<wire x1="53.34" y1="25.146" x2="57.658" y2="42.926" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="IC2" pad="14"/>
@@ -2217,9 +2216,9 @@ design rules under a new name.</description>
 <contactref element="J2" pad="A2"/>
 <contactref element="C15" pad="+"/>
 <contactref element="C14" pad="-"/>
-<wire x1="58.42" y1="5.842" x2="58.42" y2="25.146" width="0" layer="19" extent="1-1"/>
-<wire x1="71.08" y1="5.588" x2="58.42" y2="5.842" width="0" layer="19" extent="1-1"/>
 <wire x1="66.08" y1="5.588" x2="71.08" y2="5.588" width="0" layer="19" extent="1-1"/>
+<wire x1="58.42" y1="5.842" x2="66.08" y2="5.588" width="0" layer="19" extent="1-1"/>
+<wire x1="58.42" y1="16.002" x2="58.42" y2="5.842" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
