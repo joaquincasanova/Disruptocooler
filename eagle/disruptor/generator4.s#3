@@ -24082,7 +24082,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="IC3" library="lindsay-mosfet-driver" deviceset="IR2110" device=""/>
 <part name="D1" library="diode" deviceset="DIODE-" device="D-7.5" value="UF4004"/>
 <part name="C8" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value="1u"/>
-<part name="C7" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value="1u"/>
+<part name="C7" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value="min 12 nF"/>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
 <part name="IC1" library="st-microelectronics" deviceset="NE555" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -24104,8 +24104,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="C4" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value="1u"/>
 <part name="C5" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value="1u"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="100"/>
-<part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="100"/>
+<part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="10"/>
+<part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="10"/>
 <part name="J1" library="con-faston" deviceset="PIN2" device="F061.100"/>
 <part name="J2" library="con-faston" deviceset="PIN2" device="F061.100"/>
 <part name="J3" library="con-faston" deviceset="PIN2" device="F061.100"/>
@@ -24131,8 +24131,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="C12" library="resistor" deviceset="CPOL-US" device="E10-35"/>
 <part name="B2" library="rectifier" deviceset="RECTIFIER-" device="GBU4"/>
 <part name="C13" library="resistor" deviceset="CPOL-US" device="E7.5-18"/>
-<part name="C14" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value="1u"/>
-<part name="C15" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value="1u"/>
+<part name="C14" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value="50u"/>
+<part name="C15" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value="50u"/>
 </parts>
 <sheets>
 <sheet>

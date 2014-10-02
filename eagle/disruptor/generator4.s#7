@@ -24131,6 +24131,8 @@ diameter 5 mm, grid 2.54 mm</description>
 <part name="B2" library="rectifier" deviceset="RECTIFIER-" device="GBU4"/>
 <part name="C13" library="resistor" deviceset="CPOL-US" device="E7.5-18"/>
 <part name="J7" library="con-faston" deviceset="PIN2" device="F061.100"/>
+<part name="C14" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value="1u"/>
+<part name="C15" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value="1u"/>
 </parts>
 <sheets>
 <sheet>
@@ -24223,7 +24225,15 @@ diameter 5 mm, grid 2.54 mm</description>
 <instance part="C12" gate="G$1" x="63.5" y="81.28"/>
 <instance part="B2" gate="G$1" x="25.4" y="78.74"/>
 <instance part="C13" gate="G$1" x="53.34" y="152.4"/>
-<instance part="J7" gate="-1" x="236.22" y="35.56"/>
+<instance part="J7" gate="-1" x="248.92" y="76.2" rot="R180"/>
+<instance part="C14" gate="G$1" x="254" y="93.98" smashed="yes">
+<attribute name="NAME" x="254.8848" y="94.5056" size="1.27" layer="95"/>
+<attribute name="VALUE" x="254.4977" y="89.598" size="1.27" layer="96"/>
+</instance>
+<instance part="C15" gate="G$1" x="254" y="66.04" smashed="yes">
+<attribute name="NAME" x="254.8848" y="66.5656" size="1.27" layer="95"/>
+<attribute name="VALUE" x="254.4977" y="61.658" size="1.27" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -24372,6 +24382,7 @@ diameter 5 mm, grid 2.54 mm</description>
 <wire x1="45.72" y1="45.72" x2="45.72" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="50.8" x2="254" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="254" y1="50.8" x2="254" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="76.2" x2="177.8" y2="76.2" width="0.1524" layer="91"/>
@@ -24570,6 +24581,16 @@ diameter 5 mm, grid 2.54 mm</description>
 <wire x1="35.56" y1="109.22" x2="45.72" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="109.22" x2="254" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="254" y1="109.22" x2="254" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="+"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="C14" gate="G$1" pin="-"/>
+<pinref part="J7" gate="-1" pin="1"/>
+<wire x1="254" y1="88.9" x2="254" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="+"/>
+<wire x1="254" y1="68.58" x2="254" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -2228,7 +2228,7 @@ design rules under a new name.</description>
 <wire x1="53.594" y1="5.842" x2="65.024" y2="5.842" width="2.54" layer="1"/>
 <wire x1="65.024" y1="5.842" x2="66.588" y2="4.318" width="2.54" layer="1"/>
 <wire x1="66.588" y1="4.318" x2="72.898" y2="4.318" width="2.54" layer="1"/>
-<wire x1="66.588" y1="4.318" x2="74.168" y2="4.318" width="1.6764" layer="1"/>
+<wire x1="72.898" y1="4.318" x2="74.168" y2="4.318" width="1.6764" layer="1"/>
 <wire x1="74.168" y1="4.318" x2="74.168" y2="6.35" width="1.6764" layer="1"/>
 <wire x1="74.168" y1="6.35" x2="72.39" y2="6.35" width="1.6764" layer="1"/>
 <wire x1="63.5" y1="5.588" x2="63.5" y2="2.54" width="1.6764" layer="1"/>
@@ -2238,8 +2238,12 @@ design rules under a new name.</description>
 <wire x1="63.5" y1="5.588" x2="63.5" y2="6.35" width="1.6764" layer="1"/>
 <wire x1="63.5" y1="6.35" x2="72.39" y2="6.35" width="1.6764" layer="1"/>
 <wire x1="72.39" y1="6.35" x2="72.898" y2="5.842" width="1.6764" layer="1"/>
-<wire x1="72.898" y1="4.318" x2="71.588" y2="4.318" width="0" layer="19" extent="1-1"/>
 <wire x1="24.638" y1="8.89" x2="24.638" y2="9.398" width="0" layer="19" extent="1-1"/>
+<wire x1="72.898" y1="4.318" x2="64.7446" y2="4.318" width="1.6764" layer="1"/>
+<wire x1="64.7446" y1="4.318" x2="64.7446" y2="3.8354" width="1.6764" layer="1"/>
+<wire x1="64.7446" y1="3.8354" x2="65.6336" y2="3.8354" width="1.6764" layer="1"/>
+<wire x1="65.6336" y1="3.8354" x2="65.6336" y2="3.5052" width="1.6764" layer="1"/>
+<wire x1="65.6336" y1="3.5052" x2="71.588" y2="4.318" width="0" layer="19" extent="1-16"/>
 </signal>
 </signals>
 </board>
